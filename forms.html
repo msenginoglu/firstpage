@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+
+  <body>
+    <h1>Forms Demo</h1>
+    <button>Formu gönderemez.</button>
+    <form action="/food">
+      <button type="button">Lütfen formu gönderme!!</button>
+      <label for="username">Kullanıcı adı giriniz:</label>
+      <input
+        type="text"
+        placeholder="Kullanıcı adı"
+        id="username"
+        name="username"
+      />
+      <label for="password">Şifre giriniz:</label>
+      <input
+        type="password"
+        placeholder="Şifre"
+        id="password"
+        name="password"
+      />
+      <button type="submit">Gönder!</button>
+      <label for="color">Renk seçiniz:</label>
+      <input type="color" id="color" name="color" />
+      <label
+        >Sayı giriniz:
+        <input type="number" id="number" name="num" min="1" max="10" step="2" />
+      </label>
+      <button>Gönder!!!!</button>
+      <input type="submit" value="Tıklayın" />
+    </form>
+
+    <hr />
+
+    <form action="https://www.reddit.com/search">
+      <h3>Reddit'te Ara</h3>
+      <label for="reddit"></label>
+      <input type="text" id="reddit" name="q" />
+      <button>Reddit'te Ara</button>
+    </form>
+    <br />
+    <form action="https://www.google.com/search">
+      <h3>Google'da Ara</h3>
+      <label for="google"></label>
+      <input type="text" id="google" name="q" />
+      <button>Google'da Ara</button>
+    </form>
+    <br />
+    <form action="https://www.youtube.com/results">
+      <h3>Youtube'da Ara</h3>
+      <label for="youtube"></label>
+      <input type="text" id="youtube" name="search_query" />
+      <button>Youtube'da Ara</button>
+    </form>
+    <hr />
+    <h2>Daha Fazla Input</h2>
+    <form action="/birds">
+      <input type="checkbox" name="tos" id="agree" checked />
+      <label for="agree">Kabul ediyorum</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s" />
+
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+
+      <p>
+        <label for="animal">Favori hayvanınız giriniz:</label>
+        <select name="animal" id="animal">
+          <option value="fish">Balık</option>
+          <option value="bird" selected>Kuş</option>
+          <option value="cat">Kedi</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="cheese">Peynir Miktarı</label>
+        <input type="range" id="cheese" min="1" max="10" name="cheese_amount" />
+      </p>
+
+      <p>
+        <label for="istek">Özel istek</label>
+        <textarea
+          name="istek"
+          id="istek"
+          cols="20"
+          rows="10"
+          placeholder="Buraya bir şeyler yazın."
+        ></textarea>
+      </p>
+      <button>Yolla</button>
+    </form>
+
+    <h2>Validation</h2>
+    <form action="/bird">
+      <label for="first">İsim giriniz:</label>
+      <input type="text" name="first" required minlength="5" maxlength="25" />
+      <p>
+        <label for="last">Soyisim giriniz:</label>
+        <input type="text" id="last" name="last" required />
+      </p>
+
+      <p>
+        <label for="">Url doğrulama</label>
+        <input type="url" />
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
