@@ -1,1 +1,1 @@
-https://github.com/msenginoglu/firstpage.git
+https://msenginoglu.github.io/firstpage/
